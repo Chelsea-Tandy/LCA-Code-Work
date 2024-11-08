@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+
+    <!-- Filter Buttons (Using checkboxes for CSS-only  toggling) -->
+    <div class="filter-buttons">
+        <input type="checkbox" id="all" class="filter-checkbox" checked>
+        <label for="all" class="filter-btn">All</input>
+
+        <input type="checkbox" id="landscape" class="filter-checkbox" checked>
+        <label for="landscape" class="filter-btn">Landscapes</input>
+        
+        <input type="checkbox" id="portrait" class="filter-checkbox" checked>
+        <label for="portrait" class="filter-btn">Portraits</input>
+
+        <input type="checkbox" id="architecture" class="filter-checkbox" checked>
+        <label for="architecture" class="filter-btn">Architecture</input>
+    </div>
+
+    <!-- Gallery Grid (Card) -->
+    <div class="gallery-grid">
+        <!-- LAndscape Image -->
+        <div class="card landscape">
+            <img src="image1.jpg" alt="Landscape 1">
+            <div class="card-info">
+                <h3>Beautiful mountain view</h3>
+                <p class="category">Landscape</p>
+                <div class="overlay">
+                    <p>This a description of the landscape</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture Image -->
+        <div class="card architecture">
+            <img src="image3.jpg" alt="Architecture 1">
+            <div class="card-info">
+                <h3>Beautiful picture of an architecture sketch </h3>
+                <p class="category">Architecture</p>
+                <div class="overlay">
+                    <p>This a description of the architecture</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portrait Image -->
+        <div class="card portrait">
+            <img src="image6.webp" alt="Portrait 1">
+            <div class="card-info">
+                <h3>Blossom baddie</h3>
+                <p class="category">Portrait</p>
+                <div class="overlay">
+                    <p>This a description of portrait</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
